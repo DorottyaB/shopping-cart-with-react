@@ -1,5 +1,18 @@
 export function cartReducer(state, action) {
   switch (action.type) {
+    // case 'set_cart_total_amount':
+    //   return {
+    //     ...state,
+    //     total: state.cartItems.reduce((total, cartItem) => total + cartItem.amount, 0),
+    //   };
+    // case 'set_cart_value':
+    //   return {
+    //     ...state,
+    //     value: state.cartItems.reduce(
+    //       (total, cartItem) => total + cartItem.amount * cartItem.price,
+    //       0
+    //     ),
+    //   };
     case 'add_to_cart':
       const productToAdd = state.cartItems.find(item => item.id === action.cartItem.id);
       if (productToAdd) {
