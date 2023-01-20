@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Pompiere&display=swap');
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f1f1f1;
+  color: rgb(21, 21, 21);
+  letter-spacing: 1.5px;
+  padding: 20px 50px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.05);
+}
+
+.home-link-container a:link,
+.home-link-container a:visited {
+  font-family: 'Pompiere', cursive;
+  font-weight: bolder;
+  font-size: 24px;
+  display: flex;
+  gap: 1px;
+  align-items: center;
+  color: rgb(31, 31, 31);
+}
+
+.links-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.links-container a:hover {
+  color: #62866a;
+}
+
+@media screen and (max-width: 700px) {
+  nav {
+    padding: 20px 30px;
+  }
+}

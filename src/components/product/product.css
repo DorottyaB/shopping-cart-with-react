@@ -1,0 +1,88 @@
+.main--product {
+  padding: 30px 50px;
+}
+
+.product-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.product-image-container {
+  max-width: 300px;
+}
+
+.product-image-container img {
+  width: 100%;
+}
+
+.product-details-container {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(3, max-content);
+  row-gap: 20px;
+}
+
+.product-details-container h2 {
+  grid-area: 1 / 1 / 2 / -1;
+  font-size: 20px;
+}
+
+.justify-end {
+  justify-self: end;
+  font-weight: 500;
+}
+
+.number-input-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.caret-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.number-input-container button {
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+}
+
+.number-input-container button:hover svg polyline {
+  stroke: rgba(98, 134, 106, 1);
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+  width: 30px;
+  text-align: center;
+  border: none;
+  padding: 5px 0;
+  background-color: transparent;
+  border-bottom: 1px solid #2f2f2f;
+}
+
+input[type='number']:focus-visible {
+  border: 0.5px solid #62866a;
+  outline: none;
+}
+
+@media screen and (max-width: 700px) {
+  .product-container {
+    flex-direction: column;
+  }
+
+  .product-image-container {
+    max-width: 100%;
+  }
+}

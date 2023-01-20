@@ -1,0 +1,110 @@
+.main--home {
+  height: calc(100vh - 71.36px);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+.hero-text-container {
+  min-width: 350px;
+  max-width: 450px;
+  margin-left: 50px;
+  padding: 25px;
+  background-color: #f1f1f178;
+  color: rgb(23, 23, 23);
+  border-radius: 5px;
+}
+
+.hero-text-container h2 {
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 1.7px;
+  color: rgb(56, 56, 56);
+}
+
+.hero-text-container h1 {
+  margin: 10px 0;
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+.hero-text-container p {
+  letter-spacing: 1.2px;
+  color: #000;
+  font-size: 15px;
+}
+
+.cta-btn {
+  position: relative;
+  margin-top: 25px;
+  padding: 19px 22px;
+  transition: all 0.2s ease;
+  background-color: transparent;
+  width: 180px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cta-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 28px;
+  background: rgba(98, 134, 106, 0.5);
+  width: 56px;
+  height: 56px;
+  transition: all 0.3s ease;
+}
+
+.cta-btn span {
+  position: relative;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+.cta-btn svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: rgb(23, 23, 23);
+  stroke-width: 1.7;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+
+.cta-btn:hover::before {
+  width: 100%;
+  background: rgba(98, 134, 106, 1);
+}
+
+.cta-btn:hover svg {
+  transform: translateX(0);
+}
+
+.cta-btn:active {
+  transform: scale(0.96);
+}
+
+@media screen and (max-width: 700px) {
+  .main--home {
+    justify-content: center;
+  }
+
+  .hero-text-container {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}

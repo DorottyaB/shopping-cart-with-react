@@ -1,0 +1,23 @@
+.cart-icon-container {
+  position: relative;
+}
+
+.cart-count {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: rgb(26, 26, 26);
+  color: #fff;
+  position: absolute;
+  top: -4px;
+  right: -6px;
+  font-size: 10px;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-icon-container:hover .cart-count {
+  background-color: rgb(98, 134, 106);
+}

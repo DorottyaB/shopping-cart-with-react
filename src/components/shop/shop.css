@@ -1,0 +1,22 @@
+.main--shop {
+  padding: 30px 50px;
+}
+
+.main--shop h2 {
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 20px;
+}
+
+.product-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 15px;
+}
+
+@media screen and (max-width: 700px) {
+  .main--shop {
+    padding: 30px 15px;
+  }
+}

@@ -1,0 +1,69 @@
+.cart-item {
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.remove-btn {
+  font-size: 24px;
+  cursor: pointer;
+  background-color: transparent;
+  color: #1e1e1e;
+}
+
+.remove-btn:hover svg > * {
+  filter: invert(36%) sepia(62%) saturate(641%) hue-rotate(314deg) brightness(68%) contrast(101%);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  grid-template-rows: repeat(2, auto);
+  gap: 10px;
+  font-size: 18px;
+}
+
+.grid-container a:link,
+.grid-container a:visited {
+  text-decoration: underline;
+  color: #62866a;
+  font-size: 16px;
+}
+
+.grid-container a:hover {
+  color: #719d7a;
+}
+
+.cart-image-container {
+  overflow: hidden;
+  grid-area: 1 / 1 / -1 / 2;
+}
+
+.cart-image-container img {
+  width: 100%;
+}
+
+.amount-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.amount-container p {
+  user-select: none;
+  font-weight: 400;
+}
+
+.caret-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.amount-container button {
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+}
+
+.amount-container button:hover svg polyline {
+  stroke: rgba(98, 134, 106, 1);
+}
