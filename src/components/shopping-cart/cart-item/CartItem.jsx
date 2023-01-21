@@ -58,7 +58,7 @@ function CartItem({ image, id, name, price, amount }) {
           </button>
         </div>
       </div>
-      <p>${price * amount}</p>
+      <p className='item-price'>${price * amount}</p>
       <button
         onClick={() => dispatch({ type: 'remove_item_from_cart', id: id })}
         className='remove-btn'

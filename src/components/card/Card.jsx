@@ -16,7 +16,7 @@ function Card({ name, price, image, id }) {
   return (
     <div className='card'>
       <div className='card-image-container'>
-        <img src={image} alt='cushion' />
+        <img src={image} alt='cushion' loading='lazy' />
       </div>
       <div className='card-text-container'>
         <h3>{name}</h3>
